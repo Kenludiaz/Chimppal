@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display&display=swap');
+
+/* //Tag Selectors */
+header {
+    position: fixed;
+    z-index: 1;
+    background-color: #C4EBF3;
+    height: 100%;
+}
+header > a {
+    text-decoration: none;
+}
+
+h1 {
+    /* Font External */
+    font-family: 'Playfair Display', serif;
+    text-decoration: none ;
+}
+
+/* ID Selector */
+#front {
+    font-size: 144px;
+    font-weight: regular;
+    color: #333;
+}
+/* Class Selector */
+.nav-link {
+    text-decoration: none;
+    /* Font Pre-installed */
+    font-family: Helvetica, sans-serif;
+}
+
+
+
+
+
+/* Code Outside of Lab */
+
+/* Colors
+Light Blue: C4EBF3
+Blue Green Hamburger: 0C7A91
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.hamburger {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 150px;
+    top: 0;
+    background-color: #C4EBF3;
+    border-radius: 0 0 20px 0;
+    cursor: pointer;
+}
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #0C7A91;
+    position: fixed;
+    left: 160px;
+    top: 15px;
+    z-index: 2;
+    border-radius: 10px;
+}
+.hamburger::after {
+    margin-top: 10px;
+}
+
+.hide {
+    transform: scale(0, 1);
+}
+.slide,
+.slide::before,
+.slide::after {
+    transform: translateX(-150px);
+}
