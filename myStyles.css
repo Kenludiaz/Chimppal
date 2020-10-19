@@ -61,6 +61,10 @@ body,
   cursor: pointer;
 }
 
+.hamburger:focus {
+  outline: 5px 2px solid #1D8EA7;
+}
+
 .hamburger::before,
 .hamburger::after {
   content: "";
@@ -110,5 +114,61 @@ body,
 .header .logo .logo-link {
   text-decoration: none;
   color: #0C7A91;
+}
+
+.call-to-action {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.call-to-action .call-to-action-info {
+  padding: 5rem 0;
+  max-width: 60ch;
+}
+
+.call-to-action .call-to-action-info .call-to-action-title {
+  font-size: 48px;
+  font-family: 'Playfair Display', cursive;
+  color: #054553;
+}
+
+.call-to-action .call-to-action-info .call-to-action-par {
+  text-align: justify;
+  margin: 3rem 0;
+  color: #777;
+}
+
+.call-to-action .call-to-action-info .call-to-action-btn {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #1D8EA7;
+  color: #FFF;
+  padding: 1rem 2.34rem;
+  border-radius: 50px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.call-to-action .call-to-action-info .call-to-action-btn:focus, .call-to-action .call-to-action-info .call-to-action-btn:active {
+  outline: 5px 2px solid #1D8EA7;
+}
+
+.call-to-action .call-to-action-info .call-to-action-btn:hover {
+  opacity: 0.6;
+}
+
+@media (min-width: 800px) {
+  .call-to-action {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 /*# sourceMappingURL=myStyles.css.map */
