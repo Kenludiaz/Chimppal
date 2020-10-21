@@ -6,24 +6,30 @@
     <link rel="stylesheet" href="myStyles.css">
     <script src="./index.js" defer></script>
     <title>Chimp Pal - Bonobo</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-    <header class="header">
-        <h1 class="logo"><a href="./index.html" class="logo-link">Chimp Pal</a></h1>
-        <a href=" mailto: myChimpPal@gmail.com" class="email-link">Email Us</a>
+    <header class="header hide">
+        <h1 tabindex="0" class="logo"><a href="./index.html" class="logo-link">Chimp Pal</a></h1>
+        <a tabindex="0" href=" mailto: myChimpPal@gmail.com" class="email-link"> <svg height='40px' width='40px'  fill="#0C7A91" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" x="0px" y="0px"><g><path d="M27,6H5A2.9,2.9,0,0,0,2,9V23a2.9,2.9,0,0,0,3,3H27a2.9,2.9,0,0,0,3-3V9A2.9,2.9,0,0,0,27,6Zm1,16.7-8.6-7.8L28,9.2ZM16,14.8,5.8,8H26.2Zm-3.4.1L4,22.7V9.2Zm1.7,1.2,1.1.7.6.2.6-.2,1.1-.7L26.5,24H5.5Z"></path></g></svg> 
+           <span>Email Us</span></a>
         <nav class="nav">
             <ul class="nav-list">
-                <li class="nav-item"><a href="./bonobo.html" class="nav-link">Bonobos</a></li>
-                <li class="nav-item"><a href="./chimp.html" class="nav-link">Chimps</a></li>
-                <li class="nav-item"><a href="./baboon.html" class="nav-link">Baboons</a></li>
+                <li class="nav-item"><a tabindex="0" href="./bonobo.html" class="nav-link">Bonobos</a></li>
+                <li class="nav-item"><a tabindex="0" href="./chimp.html" class="nav-link">Chimps</a></li>
+                <li class="nav-item"><a tabindex="0" href="./baboon.html" class="nav-link">Baboons</a></li>
             </ul>
         </nav>
     </header>
-    <span class="hamburger"></span>
+    <button tabindex="0" class="hamburger slide"></button>
     <div class="content">
         <h2 class="page-name">Bonobo</h2>
         <picture class="picture">
-            <img src="./images/bonobo.jpg" alt="Bonobo looking afar">
+            <source srcset="./images/bonobo-400w.jpg" media="(max-width: 800px)">
+            <img src="./images/bonobo-full.jpg" alt="Bonobo looking afar">
         </picture>
         <span>Photo by <a href="https://unsplash.com/@aggergakker?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jesper Aggergaard</a> on <a href="https://unsplash.com/s/photos/chimp?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
         <article class="page-article">The bonobo (/bəˈnoʊboʊ, ˈbɒnəboʊ/; Pan paniscus), also historically called the pygmy chimpanzee and less often, the dwarf or gracile chimpanzee,[3] is an endangered great ape and one of the two species making up the genus Pan; the other being the common chimpanzee (Pan troglodytes).[4] Although bonobos are not a subspecies of chimpanzee (Pan troglodytes), but rather a distinct species in their own right, both species are sometimes referred to collectively using the generalized term chimpanzees, or chimps. Taxonomically, the members of the chimpanzee/bonobo subtribe Panina (comprised entirely by the genus Pan) are collectively termed panins.[5][6]

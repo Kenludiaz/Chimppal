@@ -4,7 +4,7 @@ header {
   position: fixed;
   z-index: 1;
   background-color: #C4EBF3;
-  height: 100%;
+  height: 100vh;
 }
 
 header > a {
@@ -48,21 +48,32 @@ body,
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+a:focus, button:focus {
+  outline: 5px solid #1D8EA7;
+  outline-offset: 2px;
+}
+
+a:hover, button:hover {
+  opacity: 0.6;
+}
+
 .hamburger {
   content: '';
   display: block;
   width: 50px;
   height: 50px;
   position: fixed;
+  z-index: 900;
   left: 190px;
   top: 0;
   background-color: #C4EBF3;
   border-radius: 0 0 20px 0;
   cursor: pointer;
-}
-
-.hamburger:focus {
-  outline: 5px 2px solid #1D8EA7;
+  border: none;
+  -webkit-transition: -webkit-transform 200ms 0 ease-in-out;
+  transition: -webkit-transform 200ms 0 ease-in-out;
+  transition: transform 200ms 0 ease-in-out;
+  transition: transform 200ms 0 ease-in-out, -webkit-transform 200ms 0 ease-in-out;
 }
 
 .hamburger::before,
@@ -84,8 +95,16 @@ body,
 }
 
 .hide {
-  -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
+  -webkit-transform: translateX(-400px);
+          transform: translateX(-400px);
+  -webkit-transition: -webkit-transform 150ms 0ms ease-in-out;
+  transition: -webkit-transform 150ms 0ms ease-in-out;
+  transition: transform 150ms 0ms ease-in-out;
+  transition: transform 150ms 0ms ease-in-out, -webkit-transform 150ms 0ms ease-in-out;
+}
+
+.hide .header {
+  opacity: 0;
 }
 
 .slide,
@@ -104,6 +123,8 @@ body,
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 2rem 1.33rem;
+  text-align: center;
+  position: fixed;
 }
 
 .header .logo {
@@ -116,8 +137,30 @@ body,
   color: #0C7A91;
 }
 
+.header .email-link {
+  color: #0C7A91;
+  font-size: 20px;
+  line-height: -500px;
+}
+
+.header .email-link span {
+  position: relative;
+  top: -10px;
+  font-weight: bold;
+}
+
+.header .nav-list {
+  list-style-type: none;
+  padding-top: 1rem;
+}
+
+.header .nav-list .nav-item .nav-link {
+  color: #054553;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
 .call-to-action {
-  width: 95%;
   margin: 0 auto;
 }
 
@@ -149,8 +192,9 @@ body,
   text-transform: uppercase;
 }
 
-.call-to-action .call-to-action-info .call-to-action-btn:focus, .call-to-action .call-to-action-info .call-to-action-btn:active {
-  outline: 5px 2px solid #1D8EA7;
+.call-to-action .call-to-action-info .call-to-action-btn:focus {
+  outline: 5px solid #1D8EA7;
+  outline-offset: 2px;
 }
 
 .call-to-action .call-to-action-info .call-to-action-btn:hover {
@@ -158,7 +202,7 @@ body,
 }
 
 .content {
-  max-width: 90%;
+  max-width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,7 +222,9 @@ body,
 }
 
 .content .page-article {
-  max-width: 80ch;
+  margin: 4.5rem 0;
+  line-height: 250%;
+  max-width: 90ch;
 }
 
 @media (min-width: 800px) {
@@ -187,9 +233,8 @@ body,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
