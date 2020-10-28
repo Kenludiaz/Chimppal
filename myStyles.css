@@ -227,6 +227,47 @@ a:hover, button:hover {
   max-width: 90ch;
 }
 
+.form {
+  margin: 200px auto;
+  text-align: justify;
+}
+
+.form section {
+  text-align: center;
+}
+
+.form h2 {
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+  width: 60%;
+  background: url("./images/butterflies.jpg");
+}
+
+.input {
+  display: block;
+  margin: .66rem auto;
+  padding: 1rem;
+}
+
+.submit {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem 2.17rem;
+  background-color: #FFF;
+  border-radius: 50px;
+  border: #1D8EA7 6px solid;
+}
+
+.page-name {
+  background-color: #1D8EA7;
+  display: block;
+  width: 100%;
+  color: #34b7e2;
+  z-index: -11;
+  text-align: center;
+}
+
 @media (min-width: 800px) {
   .call-to-action {
     margin: 0 auto;
