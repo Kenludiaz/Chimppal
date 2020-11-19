@@ -281,4 +281,20 @@ a:hover, button:hover {
             align-items: flex-end;
   }
 }
+
+.change-color {
+  border-radius: 50px;
+  border: none;
+  background-color: #333;
+  padding: 1rem;
+  color: #DDD;
+}
+
+.white {
+  background-color: #DDD !important;
+}
+
+input:invalid {
+  outline: red solid 3px;
+}
 /*# sourceMappingURL=myStyles.css.map */

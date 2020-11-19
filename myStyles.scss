@@ -263,3 +263,16 @@ a, button {
     //     }
     }
 }
+.change-color {
+    border-radius: 50px;
+    border: none;
+    background-color: #333;
+    padding: 1rem;
+    color: #DDD;
+}
+.white {
+    background-color: #DDD !important;
+}
+input:invalid {
+    outline: red solid 3px;
+}
